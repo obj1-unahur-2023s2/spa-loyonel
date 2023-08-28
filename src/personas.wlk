@@ -39,10 +39,22 @@ object bruno
 		self.tomarAgua()
 		self.verNoticiero()
 	}
+	method felicidad()
+	{
+		return felicidad
+	}
+	method sed()
+	{
+		return sed
+	}
+	method peso()
+	{
+		return peso
+	}
 }
 object olivia
 {
-	var concentracion = 0
+	var concentracion = 6
 	method recibirMasaje()
 	{
 		concentracion += 3
@@ -90,5 +102,13 @@ object ramiro
 		self.bajarAFosa()
 		self.comerBigMac()
 		self.bajarAFosa()
+	}
+	method nadaConstracturado() 
+	{
+		return constracturado == 0
+	}
+	method pielGrasosa()
+	{
+		return pielGrasosa
 	}
 }

@@ -1,0 +1,34 @@
+import spa.*
+import personas.*
+
+test "spa atiende a Ramiro y verifica que baja su constractura" 
+{
+	spa.atender(ramiro)
+	assert.that(ramiro.nadaConstracturado())
+
+}
+test "spa atiende a ramiro y ya no tiene la piel grasosa"
+{
+	spa.atender(ramiro)
+	assert.notThat(ramiro.pielGrasosa())
+}
+test "spa atiende Olivia y mira grado de concentracion"
+{
+	spa.atender(olivia)
+	assert.equals(9, olivia.gradoDeConcentracion())
+}
+test "spa atiende a bruno y es feliz"
+{
+	spa.atender(bruno)
+	assert.that(bruno.felicidad())
+}
+test "spa atiende a bruno pierde 500 gramos de peso"
+{
+	spa.atender(bruno)
+	assert.equals(54500, bruno.peso())
+}
+test "spa atiende a bruno y le da sed"
+{
+	spa.atender(bruno)
+	assert.that(bruno.sed())
+}
